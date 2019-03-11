@@ -34,7 +34,7 @@ It will scale down the deployment's replicas if all of the following conditions 
 * the deployment is not marked for exclusion (annotation ``downscaler/exclude: "true"``)
 * there are no active pods that force the whole cluster into uptime (annotation ``downscaler/force-uptime: "true"``)
 
-The deployment by default will be scaled down to zero replicas. This can be configured with the ``downscaler/scale-down-to`` annotation (eg: ``downscaler/scale-down-to: "1"``)
+The deployment by default will be scaled down to zero replicas. This can be configured with a deployment annotation of ``downscaler/scale-down-to``. (eg: ``downscaler/scale-down-to: "1"``)
 
 Example use cases:
 
