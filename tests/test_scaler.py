@@ -120,7 +120,7 @@ def test_scaler_down_to(monkeypatch):
                 {
                     'metadata': {
                         'name': 'deploy-1', 'namespace': 'default', 'creationTimestamp': '2019-03-01T16:38:00Z',
-                        'annotations': {'downscaler/scale-down-to': SCALE_TO},
+                        'annotations': {'downscaler/downtime-replicas': SCALE_TO},
                     }, 'spec': {'replicas': 5}
                 },
                 ]}
